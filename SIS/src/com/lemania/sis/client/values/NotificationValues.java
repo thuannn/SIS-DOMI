@@ -38,6 +38,7 @@ public class NotificationValues {
 	// For UI of each school
 	public static String ecoleLemania = "LM";
 	public static String pierreViret = "PV";
+	public static String domi = "DOMI";
 	
 	// Read only
 	public static String readOnly = "Vous avez l'accès en lecture seule - La modification n'a pas été effectuée";

@@ -487,11 +487,17 @@ public class MainPageView extends ViewWithUiHandlers<MainPageUiHandler> implemen
 		//
 		if (schoolCode.equals(NotificationValues.pierreViret)) {
 			imgLogo.setUrl("images/logo-pv.png");
-			txtCopyright.setText("Copyright © Pierre Viret - IT Services -");
+			txtCopyright.setText("Copyright © Pierre Viret -");
 		}
+		//
 		if (schoolCode.equals(NotificationValues.ecoleLemania)) {
 			imgLogo.setUrl("images/logo.png");
-			txtCopyright.setText("Copyright © Ecole Lémania - IT Services -");
+			txtCopyright.setText("Copyright © Ecole Lémania -");
+		}
+		//
+		if (schoolCode.equals(NotificationValues.domi)) {
+			imgLogo.setUrl("images/logo-domi.png");
+			txtCopyright.setText("Copyright © Institut DOMI -");
 		}
 	}
 	

@@ -106,11 +106,12 @@ public class SettingsView
 			lstDays.addItem(Integer.toString(i+1), Integer.toString(i));
 		lblUpdateStatus.setText("");
 		
-		// Ecoles
+		// School list
 		lstEcoles.clear();
 		lstEcoles.addItem("-", "");
 		lstEcoles.addItem("Ecole Lemania", NotificationValues.ecoleLemania);
 		lstEcoles.addItem("Pierre Viret", NotificationValues.pierreViret);
+		lstEcoles.addItem("DOMI", NotificationValues.domi);
 		
 		//
 		clearDateLists();
