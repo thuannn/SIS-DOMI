@@ -199,11 +199,11 @@ public class FrmBulletinViewDetailView extends ViewWithUiHandlers<FrmBulletinVie
 		//
 		tblBulletin.getColumnFormatter().setWidth(0, "30%");
 		tblBulletin.getColumnFormatter().setWidth(1, "10%");
-		tblBulletin.getColumnFormatter().setWidth(7, "10%");
-		tblBulletin.getColumnFormatter().setWidth(13, "10%");
+//		tblBulletin.getColumnFormatter().setWidth(7, "10%");
+//		tblBulletin.getColumnFormatter().setWidth(13, "10%");
 		tblBulletin.getColumnFormatter().setWidth(14, "40%");
-		tblBulletin.getColumnFormatter().setStylePrimaryName(7, "gradeColumn");
-		tblBulletin.getColumnFormatter().addStyleName(13, "gradeColumn");
+//		tblBulletin.getColumnFormatter().setStylePrimaryName(7, "gradeColumn");
+//		tblBulletin.getColumnFormatter().addStyleName(13, "gradeColumn");
 		//
 		styleTableMatu();
 	}

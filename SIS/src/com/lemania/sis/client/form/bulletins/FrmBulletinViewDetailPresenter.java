@@ -238,7 +238,7 @@ public class FrmBulletinViewDetailPresenter
 		BulletinSubjectRequestFactory rf = GWT.create(BulletinSubjectRequestFactory.class);
 		rf.initialize(this.getEventBus(), new EventSourceRequestTransport(this.getEventBus()));
 		BulletinSubjectRequestContext rc = rf.bulletinSubjectRequest();
-		if ( currentUser.isAdmin() || currentUser.isProf() ) {
+//		if ( currentUser.isAdmin() || currentUser.isProf() ) {
 			rc.listAll( bulletin.getId().toString() ).fire(new Receiver<List<BulletinSubjectProxy>>(){
 				@Override
 				public void onFailure(ServerFailure error){
@@ -251,20 +251,20 @@ public class FrmBulletinViewDetailPresenter
 					getBranches( bulletin );
 				}
 			});
-		} else {
-			rc.listAllForPublic( bulletin.getId().toString() ).fire(new Receiver<List<BulletinSubjectProxy>>(){
-				@Override
-				public void onFailure(ServerFailure error){
-					Window.alert(error.getMessage());
-				}
-				@Override
-				public void onSuccess(List<BulletinSubjectProxy> response) {
-					subjects.clear();
-					subjects.addAll(response);
-					getBranches( bulletin );
-				}
-			});
-		}
+//		} else {
+//			rc.listAllForPublic( bulletin.getId().toString() ).fire(new Receiver<List<BulletinSubjectProxy>>(){
+//				@Override
+//				public void onFailure(ServerFailure error){
+//					Window.alert(error.getMessage());
+//				}
+//				@Override
+//				public void onSuccess(List<BulletinSubjectProxy> response) {
+//					subjects.clear();
+//					subjects.addAll(response);
+//					getBranches( bulletin );
+//				}
+//			});
+//		}
 	}
 
 	
