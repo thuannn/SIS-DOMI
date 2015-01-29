@@ -116,9 +116,13 @@ public class FrmBulletinViewDetailView extends ViewWithUiHandlers<FrmBulletinVie
 	}
 
 	/*
+	 * 20150129 : Hide the unused columns
 	 * */
 	@Override
 	public void drawGradeTableMatu(List<BulletinSubjectProxy> subjects, List<BulletinBrancheProxy> branches, Boolean hideRemark) {
+		//
+		// Incase of DOMI always show remarques
+		hideRemark = false;
 		//
 		tblBulletin.removeAllRows();
 		//
@@ -128,18 +132,24 @@ public class FrmBulletinViewDetailView extends ViewWithUiHandlers<FrmBulletinVie
 		rowCount++;
 		tblBulletin.setText(rowCount, 0, "Matière");
 		tblBulletin.setText(rowCount, 1, "Coef");
-		tblBulletin.setText(rowCount, 7, "T1");
-		tblBulletin.setText(rowCount, 13, "T2");
-		tblBulletin.setText(rowCount, 14, "Moyenne Semestrielle");		
+//		tblBulletin.setText(rowCount, 7, "T1");
+//		tblBulletin.setText(rowCount, 13, "T2");
+//		tblBulletin.setText(rowCount, 14, "Moyenne Semestrielle");
+		tblBulletin.setText(rowCount, 7, "");
+		tblBulletin.setText(rowCount, 13, "");
+		tblBulletin.setText(rowCount, 14, "");
 		tblBulletin.getRowFormatter().setStyleName(rowCount, "bulletinHeader");
 		//
 		for (BulletinSubjectProxy subject : subjects){
 			rowCount++;
 			tblBulletin.setText(rowCount, 0, subject.getSubjectName());
 			tblBulletin.setText(rowCount, 1, subject.getSubjectCoef().toString());
-			tblBulletin.setText(rowCount, 7, subject.getT1());
-			tblBulletin.setText(rowCount, 13, subject.getT2());
-			tblBulletin.setText(rowCount, 14, subject.getAn());			
+//			tblBulletin.setText(rowCount, 7, subject.getT1());
+//			tblBulletin.setText(rowCount, 13, subject.getT2());
+//			tblBulletin.setText(rowCount, 14, subject.getAn());		
+			tblBulletin.setText(rowCount, 7, "");
+			tblBulletin.setText(rowCount, 13, "");
+			tblBulletin.setText(rowCount, 14, "");		
 			if (hideRemark)
 				tblBulletin.setText(rowCount+1, 14, "");
 			else
@@ -166,14 +176,16 @@ public class FrmBulletinViewDetailView extends ViewWithUiHandlers<FrmBulletinVie
 					tblBulletin.setText(rowCount, 4, branche.getT1_3());
 					tblBulletin.setText(rowCount, 5, branche.getT1_4());
 					tblBulletin.setText(rowCount, 6, branche.getT1_5());
-					tblBulletin.setText(rowCount, 7, branche.getT1());
+					tblBulletin.setText(rowCount, 7, "");
+//					tblBulletin.setText(rowCount, 7, branche.getT1());
 					//
 					tblBulletin.setText(rowCount, 8, branche.getT2_1());
 					tblBulletin.setText(rowCount, 9, branche.getT2_2());
 					tblBulletin.setText(rowCount, 10, branche.getT2_3());
 					tblBulletin.setText(rowCount, 11, branche.getT2_4());
 					tblBulletin.setText(rowCount, 12, branche.getT2_5());
-					tblBulletin.setText(rowCount, 13, branche.getT2());
+					tblBulletin.setText(rowCount, 13, "");
+//					tblBulletin.setText(rowCount, 13, branche.getT2());
 				}
 			}
 			//

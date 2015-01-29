@@ -48,17 +48,17 @@ withOperation(new OperationKey("xI3eZQIpHNexfYcCi43O_q$p6qI="),
   .withMethodName("removeEvaluationHeader")
   .withRequestContext("com.lemania.sis.shared.service.EvaluationHeaderRequestFactory$EvaluationHeaderRequestContext")
   .build());
-withOperation(new OperationKey("cFkXgqB6qt8D6U$cLwxTEveSBSA="),
-  new OperationData.Builder()
-  .withClientMethodDescriptor("(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lcom/google/web/bindery/requestfactory/shared/Request;")
-  .withDomainMethodDescriptor("(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lcom/lemania/sis/server/bean/evaluations/EvaluationHeader;")
-  .withMethodName("saveAndReturn")
-  .withRequestContext("com.lemania.sis.shared.service.EvaluationHeaderRequestFactory$EvaluationHeaderRequestContext")
-  .build());
 withOperation(new OperationKey("VAZQvgQQf3ugMX44sBVTbtdWYoU="),
   new OperationData.Builder()
   .withClientMethodDescriptor("(Lcom/lemania/sis/shared/EvaluationHeaderProxy;)Lcom/google/web/bindery/requestfactory/shared/Request;")
   .withDomainMethodDescriptor("(Lcom/lemania/sis/server/bean/evaluations/EvaluationHeader;)Lcom/lemania/sis/server/bean/evaluations/EvaluationHeader;")
+  .withMethodName("saveAndReturn")
+  .withRequestContext("com.lemania.sis.shared.service.EvaluationHeaderRequestFactory$EvaluationHeaderRequestContext")
+  .build());
+withOperation(new OperationKey("cFkXgqB6qt8D6U$cLwxTEveSBSA="),
+  new OperationData.Builder()
+  .withClientMethodDescriptor("(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lcom/google/web/bindery/requestfactory/shared/Request;")
+  .withDomainMethodDescriptor("(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lcom/lemania/sis/server/bean/evaluations/EvaluationHeader;")
   .withMethodName("saveAndReturn")
   .withRequestContext("com.lemania.sis.shared.service.EvaluationHeaderRequestFactory$EvaluationHeaderRequestContext")
   .build());
