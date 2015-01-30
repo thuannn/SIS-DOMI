@@ -6,17 +6,17 @@ import com.google.web.bindery.requestfactory.vm.impl.OperationData;
 import com.google.web.bindery.requestfactory.vm.impl.OperationKey;
 public final class EvaluationStudentReportRequestFactoryDeobfuscatorBuilder extends com.google.web.bindery.requestfactory.vm.impl.Deobfuscator.Builder {
 {
-withOperation(new OperationKey("c7S3rrHU3mix_y1cwjSpZVbjMjM="),
-  new OperationData.Builder()
-  .withClientMethodDescriptor("(Lcom/lemania/sis/shared/EvaluationStudentReportProxy;)Lcom/google/web/bindery/requestfactory/shared/Request;")
-  .withDomainMethodDescriptor("(Lcom/lemania/sis/server/bean/evaluations/EvaluationStudentReport;)V")
-  .withMethodName("save")
-  .withRequestContext("com.lemania.sis.shared.service.EvaluationStudentReportRequestFactory$EvaluationStudentReportRequestContext")
-  .build());
 withOperation(new OperationKey("wmCOemTRKPpGILtFSX3Plf1_GUM="),
   new OperationData.Builder()
   .withClientMethodDescriptor("(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lcom/google/web/bindery/requestfactory/shared/Request;")
   .withDomainMethodDescriptor("(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V")
+  .withMethodName("save")
+  .withRequestContext("com.lemania.sis.shared.service.EvaluationStudentReportRequestFactory$EvaluationStudentReportRequestContext")
+  .build());
+withOperation(new OperationKey("c7S3rrHU3mix_y1cwjSpZVbjMjM="),
+  new OperationData.Builder()
+  .withClientMethodDescriptor("(Lcom/lemania/sis/shared/EvaluationStudentReportProxy;)Lcom/google/web/bindery/requestfactory/shared/Request;")
+  .withDomainMethodDescriptor("(Lcom/lemania/sis/server/bean/evaluations/EvaluationStudentReport;)V")
   .withMethodName("save")
   .withRequestContext("com.lemania.sis.shared.service.EvaluationStudentReportRequestFactory$EvaluationStudentReportRequestContext")
   .build());
