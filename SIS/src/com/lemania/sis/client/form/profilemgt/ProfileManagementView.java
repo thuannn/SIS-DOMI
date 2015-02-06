@@ -609,7 +609,7 @@ public class ProfileManagementView extends ViewWithUiHandlers<ProfileManagementU
 		//
 		subjectDataProvider.getList().set( subjectLastIndex, ps );
 		//
-		if (pp.isVisible())
+		if ((pp != null) && pp.isVisible())
 			pp.hide();
 	}
 	

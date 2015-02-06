@@ -273,7 +273,9 @@ public class FrmMarkInputPresenter extends
 			String t_2_1, String t_2_2, String t_2_3, String t_2_4, String t_2_5,
 			String t_3_1, String t_3_2, String t_3_3, String t_3_4,	String t_3_5, 
 			String t_4_1, String t_4_2, String t_4_3, String t_4_4,	String t_4_5, 
-			final String remarque1, final String remarque2, final String remarque3, final String remarque4 ) {
+			final String remarque1, final String remarque2, final String remarque3, final String remarque4,
+			String note1_1, String note1_2, String note1_3, String note1_4, String note1_5, 
+			String note2_1, String note2_2, String note2_3, String note2_4, String note2_5) {
 		//
 		if (this.currentUser.isReadOnly()){
 			Window.alert(NotificationValues.readOnly);
@@ -323,6 +325,19 @@ public class FrmMarkInputPresenter extends
 		bulletinBranche.setT4_4(t_4_4);
 		bulletinBranche.setT4_5(t_4_5);
 		bulletinBranche.setT4( calculateAverage(t_4_1, t_4_2, t_4_3, t_4_4, t_4_5));
+		//
+		// Note comments
+		bulletinBranche.setNote_t1_1( note1_1 );
+		bulletinBranche.setNote_t1_2( note1_2 );
+		bulletinBranche.setNote_t1_3( note1_3 );
+		bulletinBranche.setNote_t1_4( note1_4 );
+		bulletinBranche.setNote_t1_5( note1_5 );
+		//
+		bulletinBranche.setNote_t2_1( note2_1 );
+		bulletinBranche.setNote_t2_2( note2_2 );
+		bulletinBranche.setNote_t2_3( note2_3 );
+		bulletinBranche.setNote_t2_4( note2_4 );
+		bulletinBranche.setNote_t2_5( note2_5 );
 		//
 		rcBranche.saveAndReturn(bulletinBranche).fire(new Receiver<BulletinBrancheProxy>(){
 			@Override

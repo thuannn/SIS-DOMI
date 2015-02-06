@@ -6,17 +6,17 @@ import com.google.web.bindery.requestfactory.vm.impl.OperationData;
 import com.google.web.bindery.requestfactory.vm.impl.OperationKey;
 public final class CoursRequestFactoryDeobfuscatorBuilder extends com.google.web.bindery.requestfactory.vm.impl.Deobfuscator.Builder {
 {
-withOperation(new OperationKey("w$sQ02DJfdAlgUX3WvOacGsQSJA="),
-  new OperationData.Builder()
-  .withClientMethodDescriptor("(Lcom/lemania/sis/shared/CoursProxy;)Lcom/google/web/bindery/requestfactory/shared/Request;")
-  .withDomainMethodDescriptor("(Lcom/lemania/sis/server/Cours;)V")
-  .withMethodName("save")
-  .withRequestContext("com.lemania.sis.shared.service.CoursRequestFactory$CoursRequestContext")
-  .build());
 withOperation(new OperationKey("7mwAIWGDEaPg9HeaCAD_XVziTPQ="),
   new OperationData.Builder()
   .withClientMethodDescriptor("(Lcom/lemania/sis/shared/CoursProxy;Ljava/lang/String;)Lcom/google/web/bindery/requestfactory/shared/Request;")
   .withDomainMethodDescriptor("(Lcom/lemania/sis/server/Cours;Ljava/lang/String;)V")
+  .withMethodName("save")
+  .withRequestContext("com.lemania.sis.shared.service.CoursRequestFactory$CoursRequestContext")
+  .build());
+withOperation(new OperationKey("w$sQ02DJfdAlgUX3WvOacGsQSJA="),
+  new OperationData.Builder()
+  .withClientMethodDescriptor("(Lcom/lemania/sis/shared/CoursProxy;)Lcom/google/web/bindery/requestfactory/shared/Request;")
+  .withDomainMethodDescriptor("(Lcom/lemania/sis/server/Cours;)V")
   .withMethodName("save")
   .withRequestContext("com.lemania.sis.shared.service.CoursRequestFactory$CoursRequestContext")
   .build());

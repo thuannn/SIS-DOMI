@@ -29,6 +29,7 @@ import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.user.client.ui.TextArea;
 import com.google.gwt.user.client.ui.Label;
 import com.google.gwt.user.client.ui.VerticalPanel;
+import com.google.gwt.user.client.ui.TextBox;
 
 public class FrmMarkInputView extends ViewWithUiHandlers<FrmMarkInputUiHandler> implements
 		FrmMarkInputPresenter.MyView {
@@ -103,6 +104,16 @@ public class FrmMarkInputView extends ViewWithUiHandlers<FrmMarkInputUiHandler> 
 	@UiField TextArea txtRemarque4;
 	@UiField Label txtT4;
 	@UiField VerticalPanel pnlT4;
+	@UiField TextBox txtNote1_1;
+	@UiField TextBox txtNote1_2;
+	@UiField TextBox txtNote1_3;
+	@UiField TextBox txtNote1_4;
+	@UiField TextBox txtNote1_5;
+	@UiField TextBox txtNote2_1;
+	@UiField TextBox txtNote2_2;
+	@UiField TextBox txtNote2_3;
+	@UiField TextBox txtNote2_4;
+	@UiField TextBox txtNote2_5;
 	
 	
 	@Override
@@ -503,6 +514,21 @@ public class FrmMarkInputView extends ViewWithUiHandlers<FrmMarkInputUiHandler> 
 		txtT2.setText( selectedBulletinBranche.getT2() );
 		txtT3.setText( selectedBulletinBranche.getT3() );
 		txtT4.setText( selectedBulletinBranche.getT4() );
+		
+		//
+		// Notes comments
+		//
+		txtNote1_1.setText( selectedBulletinBranche.getNote_t1_1() );
+		txtNote1_2.setText( selectedBulletinBranche.getNote_t1_2() );
+		txtNote1_3.setText( selectedBulletinBranche.getNote_t1_3() );
+		txtNote1_4.setText( selectedBulletinBranche.getNote_t1_4() );
+		txtNote1_5.setText( selectedBulletinBranche.getNote_t1_5() );
+		//
+		txtNote2_1.setText( selectedBulletinBranche.getNote_t2_1() );
+		txtNote2_2.setText( selectedBulletinBranche.getNote_t2_2() );
+		txtNote2_3.setText( selectedBulletinBranche.getNote_t2_3() );
+		txtNote2_4.setText( selectedBulletinBranche.getNote_t2_4() );
+		txtNote2_5.setText( selectedBulletinBranche.getNote_t2_5() );
 		//
 		modifyUiByProgramme();
 	}
@@ -524,13 +550,16 @@ public class FrmMarkInputView extends ViewWithUiHandlers<FrmMarkInputUiHandler> 
 	 * */
 	@UiHandler("cmdSave")
 	void onCmdSaveClick(ClickEvent event) {
+		//
 		if (getUiHandlers() != null)
 			getUiHandlers().saveNotes(selectedBulletinBranche, selectedBulletinSubject, 
 					txt_t_1_1.getText(), txt_t_1_2.getText(), txt_t_1_3.getText(), txt_t_1_4.getText(), txt_t_1_5.getText(), 
 					txt_t_2_1.getText(), txt_t_2_2.getText(), txt_t_2_3.getText(), txt_t_2_4.getText(), txt_t_2_5.getText(), 
 					txt_t_3_1.getText(), txt_t_3_2.getText(), txt_t_3_3.getText(), txt_t_3_4.getText(), txt_t_3_5.getText(), 
 					txt_t_4_1.getText(), txt_t_4_2.getText(), txt_t_4_3.getText(), txt_t_4_4.getText(), txt_t_4_5.getText(), 
-					txtRemarque1.getText(), txtRemarque2.getText(), txtRemarque3.getText(), txtRemarque4.getText() );
+					txtRemarque1.getText(), txtRemarque2.getText(), txtRemarque3.getText(), txtRemarque4.getText(),
+					txtNote1_1.getText(), txtNote1_2.getText(), txtNote1_3.getText(), txtNote1_4.getText(), txtNote1_5.getText(), 
+					txtNote2_1.getText(), txtNote2_2.getText(), txtNote2_3.getText(), txtNote2_4.getText(), txtNote2_5.getText() );
 	}
 
 	/*

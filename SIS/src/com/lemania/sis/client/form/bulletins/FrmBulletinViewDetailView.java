@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.gwtplatform.mvp.client.ViewWithUiHandlers;
+import com.google.gwt.safehtml.shared.SafeHtmlBuilder;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.inject.Inject;
@@ -40,6 +41,9 @@ public class FrmBulletinViewDetailView extends ViewWithUiHandlers<FrmBulletinVie
 	@UiField ListBox lstBulletins;
 	@UiField ListBox lstClasses;
 	@UiField HorizontalPanel pnlAdmin;
+	
+	// Thuan
+	SafeHtmlBuilder htmlBuilder = new SafeHtmlBuilder();
 	
 	//
 	List<BulletinProxy> bulletins = new ArrayList<BulletinProxy>(); 
@@ -171,19 +175,19 @@ public class FrmBulletinViewDetailView extends ViewWithUiHandlers<FrmBulletinVie
 					tblBulletin.setText(rowCount, 0, branche.getBulletinBrancheName());
 					tblBulletin.setText(rowCount, 1, branche.getBrancheCoef().toString());
 					//
-					tblBulletin.setText(rowCount, 2, branche.getT1_1());
-					tblBulletin.setText(rowCount, 3, branche.getT1_2());
-					tblBulletin.setText(rowCount, 4, branche.getT1_3());
-					tblBulletin.setText(rowCount, 5, branche.getT1_4());
-					tblBulletin.setText(rowCount, 6, branche.getT1_5());
+					tblBulletin.setHTML(rowCount, 2, branche.getT1_1() + "</br><div class='smallText'>" + branche.getNote_t1_1() + "</div>" );
+					tblBulletin.setHTML(rowCount, 3, branche.getT1_2() + "</br><div class='smallText'>" + branche.getNote_t1_2() + "</div>" );
+					tblBulletin.setHTML(rowCount, 4, branche.getT1_3() + "</br><div class='smallText'>" + branche.getNote_t1_3() + "</div>" );
+					tblBulletin.setHTML(rowCount, 5, branche.getT1_4() + "</br><div class='smallText'>" + branche.getNote_t1_4() + "</div>" );
+					tblBulletin.setHTML(rowCount, 6, branche.getT1_5() + "</br><div class='smallText'>" + branche.getNote_t1_5() + "</div>" );
 					tblBulletin.setText(rowCount, 7, "");
 //					tblBulletin.setText(rowCount, 7, branche.getT1());
 					//
-					tblBulletin.setText(rowCount, 8, branche.getT2_1());
-					tblBulletin.setText(rowCount, 9, branche.getT2_2());
-					tblBulletin.setText(rowCount, 10, branche.getT2_3());
-					tblBulletin.setText(rowCount, 11, branche.getT2_4());
-					tblBulletin.setText(rowCount, 12, branche.getT2_5());
+					tblBulletin.setHTML(rowCount, 8, branche.getT2_1() + "</br><div class='smallText'>" + branche.getNote_t2_1() + "</div>" );
+					tblBulletin.setHTML(rowCount, 9, branche.getT2_2() + "</br><div class='smallText'>" + branche.getNote_t2_2() + "</div>" );
+					tblBulletin.setHTML(rowCount, 10, branche.getT2_3() + "</br><div class='smallText'>" + branche.getNote_t2_3() + "</div>" );
+					tblBulletin.setHTML(rowCount, 11, branche.getT2_4() + "</br><div class='smallText'>" + branche.getNote_t2_4() + "</div>" );
+					tblBulletin.setHTML(rowCount, 12, branche.getT2_5() + "</br><div class='smallText'>" + branche.getNote_t2_5() + "</div>" );
 					tblBulletin.setText(rowCount, 13, "");
 //					tblBulletin.setText(rowCount, 13, branche.getT2());
 				}

@@ -20,6 +20,16 @@ th {
 
 
 /*
+	Text
+*/
+
+.smallText {
+	font-style: italic !important;
+	font-size: 10px !important;
+	min-width: 30px;
+}
+
+/*
 	Printing
 */
 

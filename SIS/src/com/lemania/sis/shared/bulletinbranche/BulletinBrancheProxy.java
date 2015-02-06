@@ -100,4 +100,65 @@ public interface BulletinBrancheProxy extends EntityProxy {
 	
 	public Long getBulletinSubjectId();
 	public void setBulletinSubjectId(Long bulletinSubjectId);
+	
+	//
+	public String getNote_t1_1();
+	public void setNote_t1_1(String note_t1_1);
+
+	public String getNote_t1_2();
+	public void setNote_t1_2(String note_t1_2);
+
+	public String getNote_t1_3();
+	public void setNote_t1_3(String note_t1_3);
+
+	public String getNote_t1_4();
+	public void setNote_t1_4(String note_t1_4);
+
+	public String getNote_t1_5();
+	public void setNote_t1_5(String note_t1_5);
+
+	public String getNote_t2_1();
+	public void setNote_t2_1(String note_t2_1);
+
+	public String getNote_t2_2();
+	public void setNote_t2_2(String note_t2_2);
+
+	public String getNote_t2_3();
+	public void setNote_t2_3(String note_t2_3);
+
+	public String getNote_t2_4();
+	public void setNote_t2_4(String note_t2_4);
+
+	public String getNote_t2_5();
+	public void setNote_t2_5(String note_t2_5);
+
+	public String getNote_t3_1();
+	public void setNote_t3_1(String note_t3_1);
+
+	public String getNote_t3_2();
+	public void setNote_t3_2(String note_t3_2);
+
+	public String getNote_t3_3();
+	public void setNote_t3_3(String note_t3_3);
+
+	public String getNote_t3_4();
+	public void setNote_t3_4(String note_t3_4);
+
+	public String getNote_t3_5();
+	public void setNote_t3_5(String note_t3_5);
+
+	public String getNote_t4_1();
+	public void setNote_t4_1(String note_t4_1);
+
+	public String getNote_t4_2();
+	public void setNote_t4_2(String note_t4_2);
+
+	public String getNote_t4_3();
+	public void setNote_t4_3(String note_t4_3);
+
+	public String getNote_t4_4();
+	public void setNote_t4_4(String note_t4_4);
+
+	public String getNote_t4_5();
+	public void setNote_t4_5(String note_t4_5);
 }

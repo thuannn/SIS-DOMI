@@ -42,6 +42,31 @@ public class BulletinBranche extends DatastoreObject implements Comparable<Bulle
 	private String t4_4 = "";
 	private String t4_5 = "";
 	
+	//
+	private String note_t1_1 = "";
+	private String note_t1_2 = "";
+	private String note_t1_3 = "";
+	private String note_t1_4 = "";
+	private String note_t1_5 = "";
+	
+	private String note_t2_1 = "";
+	private String note_t2_2 = "";
+	private String note_t2_3 = "";
+	private String note_t2_4 = "";
+	private String note_t2_5 = "";
+	
+	private String note_t3_1 = "";
+	private String note_t3_2 = "";
+	private String note_t3_3 = "";
+	private String note_t3_4 = "";
+	private String note_t3_5 = "";
+	
+	private String note_t4_1 = "";
+	private String note_t4_2 = "";
+	private String note_t4_3 = "";
+	private String note_t4_4 = "";
+	private String note_t4_5 = "";
+	
 	private String T1 = "";
 	private String T2 = "";
 	private String T3 = "";
@@ -50,6 +75,9 @@ public class BulletinBranche extends DatastoreObject implements Comparable<Bulle
 	
 	@IgnoreSave
 	Long bulletinSubjectId = Long.MIN_VALUE;
+	
+	public BulletinBranche() {
+	}
 		
 	public Double getBrancheCoef() {
 		return brancheCoef;
@@ -295,5 +323,165 @@ public class BulletinBranche extends DatastoreObject implements Comparable<Bulle
 
 	public void setT4(String t4) {
 		T4 = t4;
+	}
+
+	public String getNote_t1_1() {
+		return note_t1_1 == null ? "" : note_t1_1;
+	}
+
+	public void setNote_t1_1(String note_t1_1) {
+		this.note_t1_1 = note_t1_1;
+	}
+
+	public String getNote_t1_2() {
+		return note_t1_2 == null ? "" : note_t1_2;
+	}
+
+	public void setNote_t1_2(String note_t1_2) {
+		this.note_t1_2 = note_t1_2;
+	}
+
+	public String getNote_t1_3() {
+		return note_t1_3 == null ? "" : note_t1_3;
+	}
+
+	public void setNote_t1_3(String note_t1_3) {
+		this.note_t1_3 = note_t1_3;
+	}
+
+	public String getNote_t1_4() {
+		return note_t1_4 == null ? "" : note_t1_4;
+	}
+
+	public void setNote_t1_4(String note_t1_4) {
+		this.note_t1_4 = note_t1_4;
+	}
+
+	public String getNote_t1_5() {
+		return note_t1_5 == null ? "" : note_t1_5;
+	}
+
+	public void setNote_t1_5(String note_t1_5) {
+		this.note_t1_5 = note_t1_5;
+	}
+
+	public String getNote_t2_1() {
+		return note_t2_1 == null ? "" : note_t2_1;
+	}
+
+	public void setNote_t2_1(String note_t2_1) {
+		this.note_t2_1 = note_t2_1;
+	}
+
+	public String getNote_t2_2() {
+		return note_t2_2 == null ? "" : note_t2_2;
+	}
+
+	public void setNote_t2_2(String note_t2_2) {
+		this.note_t2_2 = note_t2_2;
+	}
+
+	public String getNote_t2_3() {
+		return note_t2_3 == null ? "" : note_t2_3;
+	}
+
+	public void setNote_t2_3(String note_t2_3) {
+		this.note_t2_3 = note_t2_3;
+	}
+
+	public String getNote_t2_4() {
+		return note_t2_4 == null ? "" : note_t2_4;
+	}
+
+	public void setNote_t2_4(String note_t2_4) {
+		this.note_t2_4 = note_t2_4;
+	}
+
+	public String getNote_t2_5() {
+		return note_t2_5 == null ? "" : note_t2_5;
+	}
+
+	public void setNote_t2_5(String note_t2_5) {
+		this.note_t2_5 = note_t2_5;
+	}
+
+	public String getNote_t3_1() {
+		return note_t3_1 == null ? "" : note_t3_1;
+	}
+
+	public void setNote_t3_1(String note_t3_1) {
+		this.note_t3_1 = note_t3_1;
+	}
+
+	public String getNote_t3_2() {
+		return note_t3_2 == null ? "" : note_t3_2;
+	}
+
+	public void setNote_t3_2(String note_t3_2) {
+		this.note_t3_2 = note_t3_2;
+	}
+
+	public String getNote_t3_3() {
+		return note_t3_3 == null ? "" : note_t3_3;
+	}
+
+	public void setNote_t3_3(String note_t3_3) {
+		this.note_t3_3 = note_t3_3;
+	}
+
+	public String getNote_t3_4() {
+		return note_t3_4 == null ? "" : note_t3_4;
+	}
+
+	public void setNote_t3_4(String note_t3_4) {
+		this.note_t3_4 = note_t3_4;
+	}
+
+	public String getNote_t3_5() {
+		return note_t3_5 == null ? "" : note_t3_5;
+	}
+
+	public void setNote_t3_5(String note_t3_5) {
+		this.note_t3_5 = note_t3_5;
+	}
+
+	public String getNote_t4_1() {
+		return note_t4_1 == null ? "" : note_t4_1;
+	}
+
+	public void setNote_t4_1(String note_t4_1) {
+		this.note_t4_1 = note_t4_1;
+	}
+
+	public String getNote_t4_2() {
+		return note_t4_2 == null ? "" : note_t4_2;
+	}
+
+	public void setNote_t4_2(String note_t4_2) {
+		this.note_t4_2 = note_t4_2;
+	}
+
+	public String getNote_t4_3() {
+		return note_t4_3 == null ? "" : note_t4_3;
+	}
+
+	public void setNote_t4_3(String note_t4_3) {
+		this.note_t4_3 = note_t4_3;
+	}
+
+	public String getNote_t4_4() {
+		return note_t4_4 == null ? "" : note_t4_4;
+	}
+
+	public void setNote_t4_4(String note_t4_4) {
+		this.note_t4_4 = note_t4_4;
+	}
+
+	public String getNote_t4_5() {
+		return note_t4_5 == null ? "" : note_t4_5;
+	}
+
+	public void setNote_t4_5(String note_t4_5) {
+		this.note_t4_5 = note_t4_5;
 	}
 }

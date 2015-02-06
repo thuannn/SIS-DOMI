@@ -59,26 +59,36 @@
 							<g:Label text="-" ui:field="lblStudentName" styleName="header"/>
 							<g:Label styleName="hiddenText" text="."/>
 							<g:VerticalPanel width="100%" ui:field="pnlT1" spacing="5">
-								<g:HorizontalPanel width="400px">
+								<g:HorizontalPanel width="100%">
 						<g:Label text="Trimestre 1 :" width="" visible="false"/>
 						<g:DoubleBox width="25px" ui:field="txt_t_1_1" styleName="markInputText"/>
+						<g:TextBox maxLength="20" width="50px" ui:field="txtNote1_1"/>
 						<g:DoubleBox width="25px" ui:field="txt_t_1_2"/>
+						<g:TextBox maxLength="20" width="50px" ui:field="txtNote1_2"/>
 						<g:DoubleBox width="25px" ui:field="txt_t_1_3"/>
+						<g:TextBox maxLength="20" width="50px" ui:field="txtNote1_3"/>
 						<g:DoubleBox width="25px" ui:field="txt_t_1_4"/>
+						<g:TextBox maxLength="20" width="50px" ui:field="txtNote1_4"/>
 						<g:DoubleBox width="25px" ui:field="txt_t_1_5"/>
+						<g:TextBox maxLength="20" width="50px" ui:field="txtNote1_5"/>
 						<g:Label text="-" ui:field="txtT1" styleName="averageGrade" width="25px" visible="false"/>
 					</g:HorizontalPanel>
 								<g:TextArea ui:field="txtRemarque1" width="95%" characterWidth="50" height="40px" visible="false"/>
 							</g:VerticalPanel>
 					<g:Label text="." styleName="hiddenText"/>
 					<g:VerticalPanel width="100%" ui:field="pnlT2" spacing="5">
-						<g:HorizontalPanel width="400px">
+						<g:HorizontalPanel width="100%">
 						<g:Label text="Trimestre 2 :" width="" visible="false"/>
 						<g:DoubleBox width="25px" ui:field="txt_t_2_1" styleName="markInputText"/>
+						<g:TextBox maxLength="20" width="50px" ui:field="txtNote2_1"/>
 						<g:DoubleBox width="25px" ui:field="txt_t_2_2"/>
+						<g:TextBox maxLength="20" width="50px" ui:field="txtNote2_2"/>
 						<g:DoubleBox width="25px" ui:field="txt_t_2_3"/>
+						<g:TextBox maxLength="20" width="50px" ui:field="txtNote2_3"/>
 						<g:DoubleBox width="25px" ui:field="txt_t_2_4"/>
+						<g:TextBox maxLength="20" width="50px" ui:field="txtNote2_4"/>
 						<g:DoubleBox width="25px" ui:field="txt_t_2_5"/>
+						<g:TextBox maxLength="20" width="50px" ui:field="txtNote2_5"/>
 						<g:Label text="-" ui:field="txtT2" styleName="averageGrade" width="25px" visible="false"/>
 					</g:HorizontalPanel>
 						<g:TextArea width="95%" ui:field="txtRemarque2" characterWidth="50" height="40px"/>
