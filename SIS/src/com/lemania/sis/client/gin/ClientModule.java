@@ -28,7 +28,6 @@ import com.lemania.sis.client.form.mainpage.MainPageView;
 import com.lemania.sis.client.form.markinput.FrmMarkInputPresenter;
 import com.lemania.sis.client.form.markinput.FrmMarkInputView;
 import com.lemania.sis.client.form.masteragenda.MasterAgendaModule;
-import com.lemania.sis.client.place.DefaultPlace;
 import com.lemania.sis.client.place.NameTokens;
 import com.lemania.sis.client.presenter.EcolePresenter;
 import com.lemania.sis.client.view.ContactView;
@@ -48,7 +47,6 @@ import com.lemania.sis.client.presenter.ProfsAddPresenter;
 import com.lemania.sis.client.presenter.ContactPresenter;
 import com.lemania.sis.client.presenter.SettingsPresenter;
 import com.lemania.sis.client.presenter.FrmPasswordPresenter;
-import com.lemania.sis.client.place.SISPlaceManager;
 import com.lemania.sis.client.presenter.CoursAddPresenter;
 import com.lemania.sis.client.presenter.CoursPresenter;
 import com.lemania.sis.client.presenter.FrmClasseListPresenter;
@@ -96,12 +94,19 @@ public class ClientModule extends AbstractPresenterModule {
 		install(new ClassroomModule());
 		install(new AbsenceListModule());
 		
-		// Singletons
-		install(new DefaultModule(SISPlaceManager.class));
+//		// Singletons
+//		install(new DefaultModule(SISPlaceManager.class));
+//		
+//		// Set DefaultPlace to homepage
+//		bindConstant().annotatedWith(DefaultPlace.class).to(
+//				NameTokens.homepage);
 		
-		// Set DefaultPlace to homepage
-		bindConstant().annotatedWith(DefaultPlace.class).to(
-				NameTokens.homepage);
+		install(new DefaultModule.Builder()
+			.defaultPlace(NameTokens.homepage)
+			.errorPlace(NameTokens.homepage)
+			.unauthorizedPlace(NameTokens.homepage)
+		.build());
+	
 		
 		bindPresenter(MainPagePresenter.class, MainPagePresenter.MyView.class,
 				MainPageView.class, MainPagePresenter.MyProxy.class);

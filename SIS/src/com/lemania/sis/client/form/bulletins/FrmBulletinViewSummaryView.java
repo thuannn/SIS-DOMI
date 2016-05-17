@@ -9,6 +9,7 @@ import com.google.gwt.user.client.Event.NativePreviewEvent;
 import com.google.gwt.user.client.Event;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.inject.Inject;
+import com.lemania.sis.client.values.AppSettingValues;
 import com.lemania.sis.client.values.NotificationValues;
 import com.lemania.sis.shared.ClasseProxy;
 import com.lemania.sis.shared.bulletin.BulletinProxy;
@@ -95,11 +96,11 @@ public class FrmBulletinViewSummaryView extends ViewWithUiHandlers<FrmBulletinVi
 	private void initializeModelList() {
 		//
 		lstModels.clear();
-		lstModels.addItem("Ecole Lémania", "lemania");
-		lstModels.addItem("Pierre Viret", "pierreviret");
-		lstModels.addItem("Prématurité - T1, T2, T3, T4", "prematurite");
-		lstModels.addItem("Prématurité - T1, T2", "prematurite12");
-		lstModels.addItem("Prématurité - T3, T4", "prematurite34");
+		lstModels.addItem("Institut DOMI", "lemania");
+//		lstModels.addItem("Pierre Viret", "pierreviret");
+//		lstModels.addItem("Prématurité - T1, T2, T3, T4", "prematurite");
+//		lstModels.addItem("Prématurité - T1, T2", "prematurite12");
+//		lstModels.addItem("Prématurité - T3, T4", "prematurite34");
 		lstModels.setSelectedIndex(0);
 	}
 
@@ -148,9 +149,10 @@ public class FrmBulletinViewSummaryView extends ViewWithUiHandlers<FrmBulletinVi
 		if (getUiHandlers() != null) {
 			lblStudentName.setText( bulletins.get(lstBulletins.getSelectedIndex()-1).getStudentName());
 			lblClassName.setText( lstClasses.getItemText(lstClasses.getSelectedIndex()));
-			lblYear.setText("Année scolaire : " 
-						+ bulletins.get(lstBulletins.getSelectedIndex()-1).getYear() + "-" 
-						+ (Integer.parseInt(bulletins.get(lstBulletins.getSelectedIndex()-1).getYear())+1));
+//			lblYear.setText("Année scolaire : " 
+//						+ bulletins.get(lstBulletins.getSelectedIndex()-1).getYear() + "-" 
+//						+ (Integer.parseInt(bulletins.get(lstBulletins.getSelectedIndex()-1).getYear())+1));
+			lblYear.setText( AppSettingValues.schoolYearDescription );
 			//
 			getUiHandlers().onBulletinChange( lstBulletins.getValue(lstBulletins.getSelectedIndex()));
 		}

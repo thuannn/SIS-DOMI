@@ -10,7 +10,7 @@
 			<g:Dock direction="NORTH">
 				<g:AbsolutePanel height="50px" width="100%" ui:field="pnlNorth">
 					<g:at left="0" top="0">
-						<g:Image url="images/logo-domi.png" width="" ui:field="imgLogo" height="50px"/>
+						<g:Image url="images/logo-domi.png" width="" ui:field="imgLogo" height="60px"/>
 					</g:at>
 					<g:at left="552" top="0">
 						<g:Grid height="24px" width="60%" borderWidth="0">
