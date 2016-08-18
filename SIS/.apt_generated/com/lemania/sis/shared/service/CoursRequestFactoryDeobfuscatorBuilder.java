@@ -50,17 +50,17 @@ withOperation(new OperationKey("qaRfMYyWbi7$Q57xIuI7nb8NDLQ="),
   .withMethodName("initialize")
   .withRequestContext("com.lemania.sis.shared.service.CoursRequestFactory$CoursRequestContext")
   .build());
-withOperation(new OperationKey("7AzSlNP61DrFnEy8h2GAE3jqZTU="),
-  new OperationData.Builder()
-  .withClientMethodDescriptor("()Lcom/google/web/bindery/requestfactory/shared/Request;")
-  .withDomainMethodDescriptor("()Ljava/util/List;")
-  .withMethodName("listAll")
-  .withRequestContext("com.lemania.sis.shared.service.CoursRequestFactory$CoursRequestContext")
-  .build());
 withOperation(new OperationKey("BNAm7BVlQVkBO2XHugvmFs5nYu8="),
   new OperationData.Builder()
   .withClientMethodDescriptor("(Ljava/lang/String;)Lcom/google/web/bindery/requestfactory/shared/Request;")
   .withDomainMethodDescriptor("(Ljava/lang/String;)Ljava/util/List;")
+  .withMethodName("listAll")
+  .withRequestContext("com.lemania.sis.shared.service.CoursRequestFactory$CoursRequestContext")
+  .build());
+withOperation(new OperationKey("7AzSlNP61DrFnEy8h2GAE3jqZTU="),
+  new OperationData.Builder()
+  .withClientMethodDescriptor("()Lcom/google/web/bindery/requestfactory/shared/Request;")
+  .withDomainMethodDescriptor("()Ljava/util/List;")
   .withMethodName("listAll")
   .withRequestContext("com.lemania.sis.shared.service.CoursRequestFactory$CoursRequestContext")
   .build());

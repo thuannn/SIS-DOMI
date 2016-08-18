@@ -73,7 +73,13 @@ public class BulletinDao extends MyDAOBase {
 		Student student;
 		for (Bulletin bulletin : q){
 			student = ofy().load().key( bulletin.getStudent() ).now();
-			bulletin.setStudentName( student.getFirstName() + " " + student.getLastName() );
+			
+			try {
+				bulletin.setStudentName( student.getFirstName() + " " + student.getLastName() );
+			} catch ( Exception e ) {
+				//
+			}
+			
 			bulletin.setProgrammeName( ofy().load().key(
 					ofy().load().key( Key.create(Classe.class, bulletin.getClasse().getId())).now()
 					.getProgramme()).now()

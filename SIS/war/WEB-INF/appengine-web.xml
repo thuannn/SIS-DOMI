@@ -3,7 +3,7 @@
 
 	<application>eprofil-domi</application>
 	
-	<version>1-20160517-1</version>
+	<version>1-20160818-1</version>
 	
 	<threadsafe>true</threadsafe>
 	
@@ -38,6 +38,12 @@
 
 
 <!-- 
+
+1-20160818-1
+............
+- BUG FIX : Bulletin duplication
+
+
 
 1-20150206-1
 
